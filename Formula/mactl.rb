@@ -1,10 +1,10 @@
 class Mactl < Formula
-  version "v0.0.17"
+  version "v0.0.18"
   desc "mactl: cli to quickly bootstrap macbooks."
   homepage "https://github.com/plantoncloud/mactl"
   os_arch = `arch`
   arch = (os_arch.include? "arm64")? "arm64" : "amd64"
-  url "https://storage.googleapis.com/mactl/#{version}/mactl-#{version}-#{arch}"
+  url "https://github.com/plantoncloud/mactl/releases/download/#{version}/mactl-#{version}-#{arch}"
   def install
     os_arch = `arch`
     arch = (os_arch.include? "arm64")? "arm64" : "amd64"
