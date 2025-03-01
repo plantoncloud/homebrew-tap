@@ -8,7 +8,7 @@ class Mactl < Formula
   def install
     os_arch = `arch`
     arch = (os_arch.include? "arm64")? "arm64" : "amd64"
-    binary_name="mactl-#{version}-#{arch}"
+    binary_name="mactl-#{arch}"
     bin.install "#{binary_name}"
     mv bin/"#{binary_name}", bin/"mactl"
   end
