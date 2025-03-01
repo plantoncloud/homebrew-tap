@@ -1,5 +1,5 @@
 class Mactl < Formula
-  version "v0.0.18"
+  version "v0.0.19"
   desc "mactl: cli to quickly bootstrap macbooks."
   homepage "https://github.com/plantoncloud/mactl"
   os_arch = `arch`
@@ -8,7 +8,7 @@ class Mactl < Formula
   def install
     os_arch = `arch`
     arch = (os_arch.include? "arm64")? "arm64" : "amd64"
-    binary_name="mactl-#{arch}"
+    binary_name="mactl-darwin-#{arch}"
     bin.install "#{binary_name}"
     mv bin/"#{binary_name}", bin/"mactl"
   end
