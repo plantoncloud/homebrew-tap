@@ -4,7 +4,7 @@ class Mactl < Formula
   homepage "https://github.com/plantoncloud/mactl"
   os_arch = `arch`
   arch = (os_arch.include? "arm64")? "arm64" : "amd64"
-  url "https://github.com/plantoncloud/mactl/releases/download/#{version}/mactl-#{version}-#{arch}"
+  url "https://github.com/plantoncloud/mactl/releases/download/#{version}/mactl-darwin-#{arch}"
   def install
     os_arch = `arch`
     arch = (os_arch.include? "arm64")? "arm64" : "amd64"
