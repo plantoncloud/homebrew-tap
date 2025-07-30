@@ -4,7 +4,7 @@ class Planton < Formula
   homepage "https://planton.cloud"
   os_arch = `arch`
   arch = (os_arch.include? "arm64")? "arm64" : "amd64"
-  url "https://storage.googleapis.com/planton-cli/#{version}/planton-#{version}-#{arch}"
+  url "https://storage.googleapis.com/planton-cli/#{version}/planton-darwin-#{version}-#{arch}"
   def install
     os_arch = `arch`
     arch = (os_arch.include? "arm64")? "arm64" : "amd64"
