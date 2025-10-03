@@ -20,16 +20,19 @@ class Planton < Formula
       Next Steps
 
       1. Authenticate with Planton Cloud:
+
          planton auth login
 
          This will open your browser to log in with your planton.cloud credentials.
 
       2. Set your organization context:
+
          planton context set --org planton-cloud
 
          This sets the default organization for all CLI commands.
 
       3. (Optional) Set your environment context:
+
          planton context set --org planton-cloud --env prod
 
          This sets the default environment for cloud resource operations.
@@ -37,6 +40,7 @@ class Planton < Formula
       Happy deploying! 🚀
 
       For more help, visit https://planton.ai/docs or run:
+
          planton --help
     EOS
   end
