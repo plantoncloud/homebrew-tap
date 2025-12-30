@@ -4,13 +4,15 @@ class Planton < Formula
   homepage "https://planton.cloud"
   os_arch = `arch`
   arch = (os_arch.include? "arm64")? "arm64" : "amd64"
-  url "https://assets.planton.ai/cli/#{version}/planton-#{version}-darwin-#{arch}"
+  url "https://downloads.planton.ai/cli/#{version}/planton-#{version}-darwin-#{arch}"
   def install
     os_arch = `arch`
     arch = (os_arch.include? "arm64")? "arm64" : "amd64"
     binary_name="planton-#{version}-darwin-#{arch}"
     bin.install "#{binary_name}"
     mv bin/"#{binary_name}", bin/"planton"
+    # Remove macOS quarantine attribute to avoid Gatekeeper warning
+    system "xattr", "-dr", "com.apple.quarantine", bin/"planton" if OS.mac?
   end
 
   def caveats
