@@ -1,10 +1,10 @@
 class Planton < Formula
-  version "v0.2.63"
+  version "v0.0.3"
   desc "planton: CLI interface for Planton Cloud"
   homepage "https://planton.cloud"
   os_arch = `arch`
   arch = (os_arch.include? "arm64")? "arm64" : "amd64"
-  url "https://assets.planton.ai/cli/#{version}/planton-#{version}-darwin-#{arch}"
+  url "https://downloads.planton.ai/cli/#{version}/planton-#{version}-darwin-#{arch}"
   def install
     os_arch = `arch`
     arch = (os_arch.include? "arm64")? "arm64" : "amd64"
