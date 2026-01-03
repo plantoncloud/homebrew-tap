@@ -29,13 +29,13 @@ class Planton < Formula
 
       2. Set your organization context:
 
-         planton context set --org planton-cloud
+         planton context set --org acmecorp
 
          This sets the default organization for all CLI commands.
 
       3. (Optional) Set your environment context:
 
-         planton context set --org planton-cloud --env prod
+         planton context set --org acmecorp --env prod
 
          This sets the default environment for cloud resource operations.
 
