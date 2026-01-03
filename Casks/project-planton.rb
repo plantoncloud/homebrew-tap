@@ -3,7 +3,7 @@ cask "project-planton" do
   name "project-planton"
   desc "Project Planton CLI - Infrastructure as Code made simple"
   homepage "https://github.com/plantonhq/project-planton"
-  version "0.2.271"
+  version "0.2.282"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "project-planton" do
   on_macos do
     on_intel do
       url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/project-planton_#{version}_darwin_amd64.tar.gz"
-      sha256 "e444f85fc28687c8f8085164c811ee01d4b99cb6dba264b1085c353f9add770d"
+      sha256 "3beac1812940ccf94e2e1760d7d521429c058c93373841b499c51d34654157c8"
     end
     on_arm do
       url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/project-planton_#{version}_darwin_arm64.tar.gz"
-      sha256 "277d1678870a1385ab4e629fe2d32db85678373f3dc061cfc762754cc3a2a972"
+      sha256 "5b46650bd19df1b832feff283b3fd1250b8c482efccaa45a85d759b6ca2c75a9"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/project-planton_#{version}_linux_amd64.tar.gz"
-      sha256 "2cc08763305461e3b48be48bb92d386fc0daa21ddc653e93e2b99aaef3ea50d0"
+      sha256 "4040db6c20d0ace6e26c2a874b8fc0ad03b047e76c7da9ea7ffa93cb193f5ab6"
     end
     on_arm do
       url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/project-planton_#{version}_linux_arm64.tar.gz"
-      sha256 "95cc34659925e66aa7fe6228db11b44c0c89868aef95e76e91f68be669311837"
+      sha256 "9b450ba37862708685b2739b853a2a481879afce37930980dcf73ea8bd39970b"
     end
   end
 
@@ -46,13 +46,10 @@ cask "project-planton" do
     ""
     "Quick Start"
     ""
-    "1. Initialize a new project:"
-    "   project-planton init"
-    ""
-    "2. Check the version:"
+    "1. Check the version:"
     "   project-planton version"
     ""
-    "3. Get help:"
+    "2. Get help:"
     "   project-planton --help"
     ""
     "Documentation: https://github.com/plantonhq/project-planton"
