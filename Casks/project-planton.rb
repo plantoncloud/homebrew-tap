@@ -3,7 +3,7 @@ cask "project-planton" do
   name "project-planton"
   desc "Project Planton CLI - Infrastructure as Code made simple"
   homepage "https://github.com/plantonhq/project-planton"
-  version "0.3.3"
+  version "0.3.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "project-planton" do
   on_macos do
     on_intel do
       url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/cli_#{version}_darwin_amd64.tar.gz"
-      sha256 "a7e887ea880b282edd5b191b7e2ff6fe0c3b83834c3a466d2c03543e53327f97"
+      sha256 "e241f0c9eb4eea390eb2d536a77ad520192fa4afff9c44909df5bb181a90b7ab"
     end
     on_arm do
       url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/cli_#{version}_darwin_arm64.tar.gz"
-      sha256 "b4289afe6b888e4527d1ac2004a7d99392f230cda8f2cc9661dbd9f67989c7e4"
+      sha256 "cf90fedb19a0244854c9767bbd80e8c19f192f910b0372ea6bc5cbf3199efbe7"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/cli_#{version}_linux_amd64.tar.gz"
-      sha256 "f87c40090f19f0d9626e3eef596c3bfcda01c55e1b92c81da7a332272fd19182"
+      sha256 "079867738bde9c869b5100e7e0662fba7068bc60dbfc9b236545ea6c566d1eeb"
     end
     on_arm do
       url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/cli_#{version}_linux_arm64.tar.gz"
-      sha256 "372bfc8c452787132255f72e1588f059bbe3d3a95ef2cd354e89d8b4eae29991"
+      sha256 "cffaeaa2e8da9164155f72dc9d8814afb154a26d87ee3a1142e4bf034d019b48"
     end
   end
 
