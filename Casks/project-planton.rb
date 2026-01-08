@@ -3,7 +3,7 @@ cask "project-planton" do
   name "project-planton"
   desc "Project Planton CLI - Infrastructure as Code made simple"
   homepage "https://github.com/plantonhq/project-planton"
-  version "0.3.2"
+  version "0.3.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,23 @@ cask "project-planton" do
 
   on_macos do
     on_intel do
-      url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/project-planton_#{version}_darwin_amd64.tar.gz"
-      sha256 "515c1f5fa7b434157d362e853d090034e42c6be20201492841e1fe66cf32c465"
+      url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/cli_#{version}_darwin_amd64.tar.gz"
+      sha256 "a7e887ea880b282edd5b191b7e2ff6fe0c3b83834c3a466d2c03543e53327f97"
     end
     on_arm do
-      url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/project-planton_#{version}_darwin_arm64.tar.gz"
-      sha256 "f503273cc5f05a838200bcfab9409b09344e920b51a9c416a5f4c260c578e18a"
+      url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/cli_#{version}_darwin_arm64.tar.gz"
+      sha256 "b4289afe6b888e4527d1ac2004a7d99392f230cda8f2cc9661dbd9f67989c7e4"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/project-planton_#{version}_linux_amd64.tar.gz"
-      sha256 "814de9d45ba867ee0b66826be84db69ab7e4a750267fe5f04913ad0c30afffb1"
+      url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/cli_#{version}_linux_amd64.tar.gz"
+      sha256 "f87c40090f19f0d9626e3eef596c3bfcda01c55e1b92c81da7a332272fd19182"
     end
     on_arm do
-      url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/project-planton_#{version}_linux_arm64.tar.gz"
-      sha256 "1621657ca3bcf016c475af718c2bc9f8519171eaa2433880c650e55a2291daab"
+      url "https://github.com/plantonhq/project-planton/releases/download/v#{version}/cli_#{version}_linux_arm64.tar.gz"
+      sha256 "372bfc8c452787132255f72e1588f059bbe3d3a95ef2cd354e89d8b4eae29991"
     end
   end
 
